@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+aside ,main,footer,header,section{
+    border: 2px red solid;
+    padding: 5px;
+}
+div{
+    display: grid;
+    grid-template-areas: 
+    " gheader     gheader      gheader       gheader    "
+    " gsection    gsection     gsection      gsection   "
+    " gaside       gmain        gmain        gimg       "
+    " gaside       gbanner      gbanner      gimg       "
+    " gaside       gadd         gadd         gimg       "
+    " gfooter     gfooter      gfooter       gfooter    "
+    ;
+    gap:5px;
+    grid-template-columns: 10%;
+
+}
+.grid1{grid-area: gheader;}
+.grid2{grid-area: gsection;}
+.grid3{grid-area: gaside;
+}
+.grid4{grid-area: gmain;}
+.grid5{grid-area: gbanner;}
+.grid6{grid-area: gadd;}
+.grid7{grid-area: gimg;}
+.grid8{grid-area: gfooter;}
+
+/* 
+header{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+}
+.photo{
+    grid-column: 1/3;
+}
+footer{
+    grid-column: 1/3;
+}
+ul{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+}
+li ,a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 10px;
+} */
